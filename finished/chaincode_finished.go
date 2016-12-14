@@ -69,7 +69,7 @@ func (t *SimpleChaincode) Query(stub shim.ChaincodeStubInterface, function strin
 
 	// Handle different functions
 	if function == "read" { //read a variable
-		var msg = "Teste Jhonatan Okata"		
+		var msg = "Teste Jhonatan Okata" + args[0]	
 		return []byte(msg), nil 		
 		//return t.read(stub, args)
 	}
